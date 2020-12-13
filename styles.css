@@ -1,19 +1,39 @@
 html,body{
     height: 100%;
+    font-family: "Lato", sans-serif;
     overflow-x: hidden;
 }
 .bg-custom{
-    background-image: linear-gradient(rgb(28, 28, 70),rgb(240, 17, 66));
+    background: #383838 url(https://www.athenadesignstudio.com/plugins/switch/images/bg.jpg) no-repeat center center;
 }
-/* .col-md-12 .img{
-    background-image: url('IMG_20201213_122437.jpg');
-    background-repeat: no-repeat;
-    background-position: fixed;
-    background-size: cover;
-} */
-.col-md-0{
-    width: 0;
+.fa{
+    cursor: pointer;
 }
-.col-md-12{
-    width: 100%;
+.closebtn{
+    font-size: 35px;
+    margin-top: -133px;
+    padding: 17px 0px 15px 15px;
+    text-decoration: none;
+    margin-left: 250px;
+    background-color: rgb(221, 207, 207);
+}
+.col-md-0 {
+    height: 100%; /* Specify a height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: rgb(12, 11, 11); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+  }
+  .col-md-12{
+      height: 100%;
+      background-color: rgb(208, 223, 223);
+  }
+@media screen and (max-width:900px){
+    #table{
+        margin-top: 10px;
+    }
 }

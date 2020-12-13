@@ -19,38 +19,143 @@
 </head>
 <body>
     <div class="row">
-       <div class="col-md-0">
-
+       <div class="col-md-0" id="mySidebar">
+            <nav class="navbar-nav">       
+                <a href="#" class="navbar-brand mx-auto mb-5 bg-light w-100">
+                            <img src="IMG_20201213_122437.jpg" width="70px" style="margin-left: 110px;">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                </a>
+                <ul class="navbar-nav text-center">
+                     <li class="nav-item">
+                         <a href="" class="nav-link">DSM Championship</a>
+                     </li>
+                     <li class="dropdown-divider"></li>
+                     <li class="nav-item">
+                        <a href="" class="nav-link">Mini Militia League</a>
+                     </li>
+                     <li class="dropdown-divider"></li>
+                     <li class="nav-item">
+                        <a href="" class="nav-link">Best Of DSM</a>
+                     </li>
+                </ul>
+            </nav>
        </div>
-       <div class="col-md-12">
+       <div class="col-md-12 bg-light" id="main">
            <nav class="navbar navbar-expand-md bg-custom">
                <ul class="navbar-nav mr-auto">
                    <li class="nav-item">
-                      <i style="font-size:24px;color: white;" class="fa">&#xf039;</i>
+                      <i style="font-size:24px;color: white;" class="fa" onclick="openNav()">&#xf039;</i>
                    </li>
                </ul>
                <ul class="navbar-nav ml-auto">
                    <li class="nav-item">
-                       <a href="#" class="nav-link">
+                       <a href="https://www.facebook.com/groups/minimilitiagamershub/permalink/370324047331901" class="nav-link">
                          <i class='fa fa-facebook-square' style='font-size:36px;color: white;'></i>
                       </a>
                    </li>
                </ul>           
            </nav>
-           <div class="img">
+           <div class="container-fluid" id="index">
+             <div class="img">
                 <img src="IMG_20201213_122437.jpg" alt="dsm image" style="width: 100%;height: 600px;">
-           </div>
-           <div class="conatiner-fluid">
+             </div>
+             <div class="container mt-2">
                <div class="row">
-                   <div class="col-md-6">
-
+                   <div class="col-md-6 bg-danger mb-xs-2 mb-sm-2" style="border-radius: 30px;height: 510px;width: 100%;">
+                    <div class="card bg-dark text-white mt-3" style="border-radius: 30px;">
+                        <div class="card-body">
+                          <h4 class="card-title bg-dark text-center text-white" style="border-radius: 30px;">About DSM ></h4>
+                          <p class="card-text">DSM stands for Desert Storm Members.DSM always plays a fair game
+                              and if anyone commits taunts or misuse clan then immediate action taken against them and 
+                              we respect each and every clan members and in return expecting the same.
+                              We welcome you to this D💲♏ clan.D💲♏is a family of soldiers where we will discuss strategies,
+                              develop our skills and play with eachother to know our partner’s game play.We will enter in clan wars.
+                              Respect each other.
+                          </p>
+                          <a href="https://www.facebook.com/groups/minimilitiagamershub/permalink/370324047331901" class="card-link">
+                            <i class='fa fa-facebook-square' style='font-size:36px;color: rgb(214, 166, 166);'></i>
+                          </a>
+                          
+                        </div>
+                      </div>
                    </div>
-                   <div class="col-md-6">
-
+                   <div class="col-md-6 mt-lg-0" id="table">
+                        <table class="table table-dark table-striped text-center" style="border-radius: 30px;overflow: hidden;">
+                             <tr class="bg-danger">
+                                 <th>
+                                     SNO
+                                 </th>
+                                 <th>
+                                     DSM Players
+                                 </th>
+                             </tr>
+                             <tr>
+                                 <td>1</td>
+                                 <td>D💲♏ Master Avi</td>
+                             </tr>
+                             <tr>
+                                <td>2</td>
+                                <td>D💲♏ Beard Man</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>D💲♏ Sniper 417</td>
+                            </tr>   
+                            <tr>
+                                <td>4</td>
+                                <td>D💲♏ The Pro Noobie</td>
+                            </tr>       
+                            <tr>
+                                <td>5</td>
+                                 <td>D💲♏ Nobbie</td>
+                            </tr>     
+                            <tr>
+                                <td>6</td>
+                                 <td>D💲♏ Oggy</td>
+                            </tr>  
+                            <tr>
+                                <td>7</td>
+                                 <td>D💲♏ Vips</td>
+                            </tr> 
+                            <tr>
+                                <td>8</td>
+                                 <td>D💲♏ Beast</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                 <td>D💲♏ Avada</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                 <td>D💲♏ Nikhil</td>
+                            </tr>    
+                        </table>
                    </div>
                </div>
+             </div>
            </div>
        </div>
     </div>
+    <script>
+          function openNav() {
+            document.getElementById("mySidebar").style.width = "300px";
+            // document.getElementById("mySidebar").style.display = block;
+          }
+          function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+          }
+          $(document).ready(function(){
+              $('.fa').click(function(){
+                  $('#main').css('opacity','0.3');
+              })
+              $('.closebtn').click(function(){
+                  $('#main').css('opacity','1');
+              })
+              $('.col-md-0 nav li:nth-child(1)').click(function(e){
+                  e.preventDefault();
+                  $("body").load("one.html")
+              })
+          })
+    </script>
 </body>
 </html>
