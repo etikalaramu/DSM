@@ -19,7 +19,7 @@
 </head>
 <body>
     <div class="row">
-       <div class="col-md-0" id="mySidebar">
+       <!-- <div class="col-md-0" id="mySidebar">
             <nav class="navbar-nav">       
                 <a href="#" class="navbar-brand mx-auto mb-5 bg-light w-100">
                             <img src="IMG_20201213_122437.jpg" width="70px" style="margin-left: 110px;">
@@ -43,16 +43,57 @@
                      </li>
                 </ul>
             </nav>
-       </div>
-       <div class="col-md-12 bg-light" id="main">
-           <nav class="navbar navbar-expand-md bg-custom justify-content-center">
+       </div> -->
+       <div class="col-md-12" id="main">
+           <div id="mybutton">
+            <button type="submit" class="button" data-toggle="modal" data-target="#myModal">DSM Rules</button>
+           </div>
+        <!-- The Modal -->
+            <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                <div class="modal-content">
+            
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                    <h4 class="modal-title">D💲♏️ Rules</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+            
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        D💲♏️ (DESERT STORM) <br><br>
+
+                        We welcome you to this D💲♏️ clan.D💲♏️is a family of soldiers where we will discuss strategies,develop our skills and play with eachother to know our partner’s game play.We will enter in clan wars.We all are expected not to use abusive language in this group and also in clan wars.Respect each other. <br><br>
+                        
+                        *RULES* <br><br>
+                        
+                        1. You can’t play under the name of any other clan. <br>
+                        
+                        2. Committing suicide and betraying intentionally is not allowed. <br>
+                        
+                        3. Don’t sledge your opponents.Respect each and every clan/player you play with. <br>
+                        
+                        4. Add D💲♏️ in your name in MM. <br>
+                        
+                        5. D💲♏️ is committed to play fairly,so if u r using any kind of mod(hacked versions) pls dont join our group. 
+                    </div>
+            
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+            
+                </div>
+                </div>
+            </div>
+           <!-- <nav class="navbar navbar-expand-md bg-custom justify-content-center">
                <ul class="navbar-nav mr-auto">
                    <li class="nav-item">
                       <i style="font-size:24px;color: white;" class="fa" onclick="openNav()">&#xf039;</i>
                    </li>
                </ul>
                <li class="nav-item" style="list-style-type: none;">
-                <a href="#" class="nav-link text-white font-weight-bolder" style="font-size: 25px;">DSM</a>
+                <a href="#" class="nav-link text-white font-weight-bolder" style="font-size: 25px;">D💲♏️</a>
                </li>
                <ul class="navbar-nav ml-auto">
                    <li class="nav-item">
@@ -61,7 +102,40 @@
                       </a>
                    </li>
                </ul>           
-           </nav>
+           </nav> -->
+           <nav class="navbar navbar-expand-lg bg-custom navbar-dark">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#" style="font-size: 30px;">D💲♏️</a>
+          
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="" class="nav-link text-white">DSM Championship ></a>
+                </li>
+                <li class="dropdown-divider"></li>
+                <li class="nav-item">
+                   <a href="" class="nav-link text-white">Mini Militia League ></a>
+                </li>
+                <li class="dropdown-divider"></li>
+                <li class="nav-item">
+                   <a href="" class="nav-link text-white">Best Of DSM ></a>
+                </li>
+                <li class="dropdown-divider"></li>
+                <li class="nav-item">
+                   <a href="" class="nav-link text-white">Entertainment ></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+           <div class="bg-warning" id="marq">
+                <marquee><h2>Welcome to D💲♏️ Family</h2></marquee>
+           </div>
            <div class="container-fluid" id="index">
              <div class="img">
                 <img src="IMG_20201213_122437.jpg" alt="dsm image" style="width: 100%;height: 600px;">
@@ -70,7 +144,7 @@
                <div class="row">
                    <div class="col-md-6 mt-lg-0" id="table">
                         <table class="table table-dark table-bordered table-striped text-center" style="border-radius: 15px;overflow: hidden;">
-                             <tr class="bg-info">
+                             <tr class="bg-danger">
                                  <th>
                                      SNO
                                  </th>
@@ -219,17 +293,22 @@
               $('.closebtn').click(function(){
                   $('#main').css('opacity','1');
               })
-              $('.col-md-0 nav li:nth-child(1)').click(function(e){
+              $('#collapsibleNavbar li:nth-child(1)').click(function(e){
                   e.preventDefault();
                   $("body").load("one.html")
               })
-              $('.col-md-0 nav li:eq(2)').click(function(e){
+              $('#collapsibleNavbar li:eq(2)').click(function(e){
                   e.preventDefault();
                   $("body").load("mml.html")
               })
-              $('.col-md-0 nav li:nth-child(5)').click(function(e){
+              $('#collapsibleNavbar li:nth-child(5)').click(function(e){
                   e.preventDefault();
                   $("body").load("best-of-dsm.html")
+                
+              })
+              $('#collapsibleNavbar li:nth-child(7)').click(function(e){
+                  e.preventDefault();
+                  $("body").load("entertainment.html")
                 
               })
               $("#avi").click(function(e){
