@@ -1,0 +1,112 @@
+html,body{
+    height: 100%;
+    font-family: "Lato", sans-serif;
+    overflow-x: hidden;
+}
+.bg-custom{
+  background-image: linear-gradient(to right,#c31432,#240b36);
+}
+.fa{
+    cursor: pointer;
+}
+h2 {
+  text-shadow: 2px 2px 15px red;
+}
+  #marq{
+    height: 50px;
+    color: white;
+    /* background-image: linear-gradient(to right bottom, #0f418b, #004d7a, #4c6b0a); */
+    /* background-color: rgb(8, 185, 185) */
+  }
+  .col-md-12{
+      height: 100%;
+      /* background-color: rgb(116, 224, 224); */
+  }
+  .carousel-inner img{
+      height: 100%;
+      width: 100%;
+  }
+  .closebtn:hover{
+      color: white;
+  }
+  #mybtn{
+      position: fixed;
+      
+  }
+  .button {
+    background-color: #1c87c9;
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+    border: none;
+    color: #eeeeee;
+    cursor: pointer;
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+  }
+  @keyframes glowing {
+    0% {
+      background-color: #77ad20;
+      box-shadow: 0 0 5px #b0e9bd;
+    }
+    50% {
+      background-color: #77ad20;
+      box-shadow: 0 0 20px#b0e9bd;
+    }
+    100% {
+      background-color: #77ad20;
+      box-shadow: 0 0 5px #b0e9bd;
+    }
+  }
+  .button {
+    animation: glowing 1300ms infinite;
+  }
+@media screen and (max-width:900px){
+    #table{
+        margin-top: 10px;
+    }
+    #info{
+        margin-top: 10px;
+    }
+    img{
+        max-height: 200px;
+    }
+   
+    #mybtn{
+        position: fixed;
+        overflow: visible;
+        margin-left: 220px;
+        margin-top: 450px;
+    }
+    #mybutton {
+        /* display: none;  */
+        position: fixed;
+        z-index: 1 !important; 
+        left: 220px;
+        top: 550px;
+      }
+      .carousel-inner img{
+        max-height: 100%;
+        max-width: 100%;
+      }
+}
+@media (min-width:1500px){
+  #mybutton button{
+      position: fixed;
+      z-index: 1 !important; 
+      margin-left: 1250px;
+      margin-top: 350px;
+      font-size: 30px;
+    }
+    #mybtn{
+      position: fixed;
+      overflow: visible;
+      margin-left: 1250px;
+      margin-top: 350px;
+      font-size: 30px;
+  }
+
+}

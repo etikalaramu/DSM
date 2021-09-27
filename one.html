@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <style>
+         #mybtn1{
+        position: fixed;
+        margin-left: 250px;
+        margin-top: 450px;
+    }
+    </style> -->
+</head>
+<body>
+    <a href="home.html" class="text-white"><button class="btn btn-success btn-lg w-100 bg-danger" style="width: 200px;margin: auto;">Go to Home Page</button></a>
+    <a href="home.html"><button class="btn btn-warning btn-lg" id="mybtn">Home Page</button></a>
+    <img src="Screenshot (189).png" alt="dsm championship" style="height: 400px;width: 100%;"><br><br>
+    <img src="Screenshot (190).png" alt="dsm championship" style="height: 400px;width: 100%;">
+    <script>
+        $(document).ready(function(){
+            $("#mybtn").click(function(){
+                $("body").load("home.html")
+            })
+        })
+    </script>
+</body>
+</html>
